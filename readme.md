@@ -26,17 +26,14 @@ Printing payments result to console was set to every 60s, this is specified in a
 
 # Test
 Test package has been included in to src/test/java folder
-Open com.bc.pay.service.PaymentServiceTest.java, right click -> run as > JUnit( please make sure you are using JUNIT5 in run configuration))
+Open com.bc.pay.service.PaymentServiceTest.java, right click -> run as -> JUnit( please make sure you are using JUNIT5 in run configuration))
 
 # About running logic
-1.
-It has strong format validation, you could only input <CURRENCYCODE(in uppercase) Amount> format, otherwise it will hint out the format incorrect.
+1. It has strong format validation, you could only input <CURRENCYCODE(in uppercase) Amount> format, otherwise it will hint out the format incorrect.
 e.g. "USd 1000", it will say "Sorry, detected an illegal format: USd100, this line would be ignored. The correct format should be like: <USD 100>", 
 but that just a hint, you could keep continue to input the right value.
-2.
-Input "quit" to end the program running.
-3.
-This version contains USD exchange convention, the USD exchange rates are configured in application.yml: payment.service.exchangeRateMap, can add up 
+2. Input "quit" to end the program running.
+3. This version contains USD exchange convention, the USD exchange rates are configured in application.yml: payment.service.exchangeRateMap, can add up 
 meaningful exchange rate if you like, e.g. "TWD": 100
 
 Enjoy:)
