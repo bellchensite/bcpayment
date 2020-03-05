@@ -3,16 +3,14 @@ This is a springboot application, springboot version:2.2.5, JDK 1.8, with Maven 
 Any issue on running, just email me :)
 
 # How to run
-* In Eclipse
+### In Eclipse
 Import this project as Maven project, wait for all dependency libraries download finished.
 Open com.bc.pay.PaymentsApplication.java, right click -> run as -> JAVA application
-
-* In Maven
-Open CMD window
+### In Maven
+Open CMD window    
 cd __Project_Root_folder__  
 mvn spring-boot:run
-
-* In JAVA executable jar(the executable jar file has been included in the project root folder)
+### In JAVA executable jar(the executable jar file has been included in the project root folder)
 java -jar Payments-0.0.1-SNAPSHOT.jar
 
 # How to specify the initial payment file?
