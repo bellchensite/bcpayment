@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Payments
+
+payment.service:
+  #The interval to printing the payments, in millisecond
+  printingInterval: 60000
+  paymentFile: classpath:payment.txt
+  exchangeRateMap: {"EUR":1.11,"HKD":7.76,"CNY":6.93, "GBP":1.28}
+
+
+---
+spring:
+  profiles: test
+
+payment.service:
+  paymentFile: classpath:payment.txt
+  exchangeRateMap: {"HKD":7.76,"CNY":6.93}
+  
