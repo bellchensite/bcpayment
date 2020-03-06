@@ -28,7 +28,7 @@ Open com.bc.pay.service.PaymentServiceTest.java, right click -> run as -> JUnit(
 
 # About running logic
 1. It has strong format validation, you could only input <CURRENCYCODE(in uppercase) Amount> format, otherwise it will hint out the format incorrect.
-e.g. "USd 1000", it will say "Sorry, detected an illegal format: USd100, this line would be ignored. The correct format should be like: <USD 100>", 
+e.g. "USd 1000", it will say "Sorry, detected an illegal format: USd 1000, this line would be ignored. The correct format should be like: <USD 100>", 
 but that just a hint, you could keep continue to input the right value.
 2. Input "quit" to end the program running.
 3. This version contains USD exchange convention, the USD exchange rates are configured in application.yml: payment.service.exchangeRateMap, can add up 
